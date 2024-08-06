@@ -36,6 +36,6 @@ steps:
       sudo docker pull diegodesalles/user-login:latest
       sudo docker stop user-login || true
       sudo docker rm user-login || true
-      sudo docker run -d --name user-login --network microfrontend -p 3002:3002 diegodesalles/product-list:latest
+      sudo docker run -d --name user-login --network microfrontend -p 3002:3002 diegodesalles/user-login:latest
     EOF
   displayName: 'Deploy to Azure VM'
